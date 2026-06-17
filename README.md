@@ -271,6 +271,10 @@ Beyond the episodic journals and the semantic `PROJECT.md` / `USER.md` notes, Me
 - *"Make a skill out of what we just did."* — the agent drafts a skill from the session (reading the original transcript so the steps are exact, not guessed), saves it as a candidate, and offers to install it.
 - *"What skill candidates do I have? Install the deploy one."* — the agent lists candidates and installs the one you pick into its own skill directory, where it becomes a real `/`-command.
 
+<p align="center">
+  <img width="1086" height="752" alt="MemSearch skill distillation demo" src="https://github.com/user-attachments/assets/39a90f1c-54e3-4c7a-b168-051f0e096d39">
+</p>
+
 Under the hood, candidates live in a git-tracked `.memsearch/skill-candidates/` store — diffable and revertible, and **inert until you install one** (that step is always yours). An optional background pass can also mine recurring workflows from your history on its own. Distilled skills follow the [Agent Skills](https://agentskills.io) open standard, so one capture is portable across Claude Code, Codex, OpenCode, and others.
 
 **Turning it on is also just a sentence:** ask your agent *"enable MemSearch skill distillation"* (or *"make it more eager"*) and it configures things through the `memory-config` skill — it's off by default. Prefer editing files? The same settings live under `[plugins.<agent>.memory_to_skill]` in your MemSearch config. Full guide: **[Skills from Memory](https://zilliztech.github.io/memsearch/home/skills-from-memory/)**.

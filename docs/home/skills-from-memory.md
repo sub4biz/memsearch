@@ -29,6 +29,10 @@ You don't run commands. You talk to your agent:
   been collected and installs the one you choose, which becomes a real
   `/`-command in that agent.
 
+<p align="center">
+  <img width="1086" height="752" alt="MemSearch skill distillation demo" src="https://github.com/user-attachments/assets/39a90f1c-54e3-4c7a-b168-051f0e096d39">
+</p>
+
 Enabling and tuning are the same: *"turn on MemSearch skill distillation"* and the
 agent configures it for you. The whole surface is a conversation; the CLI exists
 underneath, but it's plumbing the agent drives, not something you memorize.
